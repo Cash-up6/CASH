@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cashup Pvt Ltd - Welcome</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #2c3e50, #3498db);
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    img {
+      width: 120px;
+      margin-bottom: 30px;
+    }
+
+    .welcome-container {
+      display: flex;
+      font-size: 2rem;
+      font-weight: bold;
+      overflow: hidden;
+    }
+
+    .part {
+      white-space: nowrap;
+      opacity: 0;
+      animation: slideIn 1.5s forwards;
+    }
+
+    .left {
+      transform: translateX(-100%);
+      animation-delay: 0.2s;
+    }
+
+    .right {
+      transform: translateX(100%);
+      animation-delay: 0.2s;
+    }
+
+    @keyframes slideIn {
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .welcome-container {
+        font-size: 1.6rem;
+      }
+
+      img {
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="YOUR_LOGO_LINK_HERE" alt="Cashup Logo">
+  <div class="welcome-container">
+    <div class="part left">සාදරයෙන් </div>
+    <div class="part right">පිළිගන්නවා!</div>
+  </div>
+
+  <script>
+    console.log("Welcome animation loaded");
+  </script>
+</body>
+</html>
