@@ -15,6 +15,7 @@
       justify-content: center;
       height: 100vh;
       overflow: hidden;
+      text-align: center;
     }
 
     img {
@@ -26,7 +27,7 @@
 
     h2 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       animation: fadeIn 1.5s ease-in-out;
     }
 
@@ -39,7 +40,7 @@
     }
 
     .cashup {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-top: 10px;
       animation: zoomSpin 2s ease-in-out;
       color: #00bcd4;
@@ -90,20 +91,30 @@
         bottom: 50px;
       }
     }
+
+    @media (max-width: 600px) {
+      h2, .cashup {
+        font-size: 1.8rem;
+      }
+
+      .cashup {
+        font-size: 2.2rem;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Logo (replace with your logo image link if needed) -->
+  <!-- Logo -->
   <img src="https://via.placeholder.com/100x100.png?text=Logo" alt="Logo" />
 
-  <!-- Title -->
+  <!-- Centered Title -->
   <h2>
     <span class="highlight-purple">Welcome to</span>
     <span class="highlight-black">Online Loan</span>
   </h2>
 
-  <!-- Animated CashUp -->
+  <!-- Emphasized CashUp -->
   <div class="cashup">CashUp P.v.t ltd</div>
 
   <!-- Language Buttons -->
